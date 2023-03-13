@@ -12,9 +12,19 @@ function persistence(num) {
             res *= digit
         }
         num = res;
-        count += 1     
+        count += 1
     }
     return count;
 }
 
-persistence(3958)
+
+
+// const persistence = num => {
+//     console.log(`${num}`.length > 1 
+//     ? 1 + persistence(`${num}`.split('').reduce((a, b) => a * +b)) 
+//     : 0)
+//   return `${num}`.length > 1 
+//     ? 1 + persistence(`${num}`.split('').reduce((a, b) => a * +b)) 
+//     : 0;
+// }
+persistence(39)
