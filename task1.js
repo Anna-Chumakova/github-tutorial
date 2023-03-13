@@ -11,7 +11,7 @@
 function isValidWalk(walk) {
     let valid;
     for (let i = 0; i <= walk.length; i += 1) {
-        valid = walk.length === 10 && walk[i] !== walk[i + 1] && walk[1] === walk[9] 
+        valid = walk.length === 10 && walk[i] !== walk[i + 1]  
         const result = valid ? true : false
         console.log(result)
         return  result  
