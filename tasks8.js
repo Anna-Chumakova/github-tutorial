@@ -16,96 +16,102 @@
 // eight(dividedBy(three()));
 
 
-let firstArg = 0;
-let secondArg = 0;
-let res = 0;
-// function zero(value) {
-//     if (value) {
-//         firstArg = 0;
-//         return res;
-//     }
-    
-//     secondArg = 0;
-// }
-// function one(value) {
-//     if (value) {
-//         firstArg = 1;
-//         return res;
-//     }
-    
-//     secondArg = 1;
-// }
-// function two(value) {
-//     if (value) {
-//         firstArg = 2;
-//         return res;
-//     }
-    
-//     secondArg = 2;
-// }
-// function three(value) {
-//     if (value) {
-//         firstArg = 3;
-//         return res;
-//     }
-    
-//     secondArg = 3;
-// }
-function four(...args) {
-    firstArg = 4;
-    
-    const result = (firstArg, secondArg)
-    return result;
+
+
+function zero(func) {
+    if (func) {
+        const res = eval(`0 ${func}`);
+    return Math.trunc(res);
+    }
+    return 0
 }
-// function five(value) {
-//     if (value) {
-//         firstArg = 5;
-//         return res;
-//     }
+function one(func) {
+   console.log(func);
+    if (func) {
+        const res = eval(`1 ${func}`);
     
-//     secondArg = 5;
-// }
-// function six(value) {
-//     if (value) {
-//         firstArg = 6;
-//         return res;
-//     }
+    return Math.trunc(res);
+    }
+    return 1
+}
+function two(func) {
+    console.log(func);
+    if (func) {
+        const res = eval(`2 ${func}`);
     
-//     secondArg = 6;
-// }
-// function seven(value) {
-//     if (value) {
-//         firstArg = 7;
-//         return res;
-//     }
+    return Math.trunc(res);
+    }
+    return 2
+}
+function three(func) {
+   console.log(func);
+    if (func) {
+        const res = eval(`3 ${func}`);
     
-//     secondArg = 7;
-// }
-// function eight(value) {
-//     if (value) {
-//         firstArg = 8;
-//         return res;
-//     }
+    return Math.trunc(res);
+    }
+    return 3
+}
+function four(func) {
+    console.log(func);
+    if (func) {
+        const res = eval(`4 ${func}`);
     
-//     secondArg = 8;
-// }
-function nine( ...args) {
-    firstArg = 9;
-    console.log(args)
-    const result = args(firstArg, secondArg)
-    return result;
+    return Math.trunc(res);
+    }
+    return 4
+}
+function five(func) {
+    console.log(func);
+    if (func) {
+        const res = eval(`5 ${func}`);
+    
+    return Math.trunc(res);
+    }
+    return 5
+}
+function six(func) {
+    console.log(func);
+    if (func) {
+        const res = eval(`6 ${func}`);
+    console.log(res)
+    //return Math.round(res);
+        return Math.trunc(res)
+    }
+    return 6
+}
+function seven(func) {
+    console.log(func);
+    if (func) {
+        const res = eval(`7 ${func}`);
+    
+    return Math.trunc(res);
+    }
+    return 7
+}
+function eight(func) {
+    console.log(func);
+    if (func) {
+        const res = eval(`8 ${func}`);
+    
+    return Math.trunc(res);
+    }
+    return 8
+}
+function nine( func) {
+    console.log(func);
+    if (func) {
+        const res = eval(`9 ${func}`);
+    
+    return Math.trunc(res);
+    }
+    return 9
 }
 
-function plus(a, b) {    
-    return a + b; 
-}
-// function minus() {}
-// function times() {}
-// function dividedBy() { }
+function plus(a) { return `+ ${a}`; }
+ function minus(a) {return `- ${a}`}
+ function times(a) {return `* ${a}`}
+ function dividedBy(a) {return `/ ${a}`}
+console.log(six(dividedBy(eight())))
 
-// four(plus(nine()));
- //console.log(four())
-//console.log(four(plus(four())))
-// console.log(four())
-// console.log(plus(four()))
-console.log(nine(plus(four())))
+ 
